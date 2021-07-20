@@ -1,0 +1,74 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	height: 100vh;
+}
+
+.middle
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 80vh;
+	justify-content: space-around;
+}
+iframe
+{
+	border: 0;
+	width: 100vw;
+	height: calc(100vw/2);
+}
+.players
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100vw;
+	justify-content: space-around;
+}
+
+.item
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item img
+{
+	height: 30vh;
+	width: 40vw;
+	filter: drop-shadow(1px 1px 20px rgba(0,0,0,.7));
+	animation-name: anim;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.item h1
+{
+	color: #2066a8;
+	font-family: monospace;
+}
+.navbar
+{
+	font-family: monospace;
+	color: #2066a8;
+	padding: 20px;
+}
+
+@keyframes anim
+{
+  0% 
+	{
+    transform: translate(0, 0);
+  }
+  100% 
+  {
+    transform: translate(10px, 20px);
+  }
+}
