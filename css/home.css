@@ -4,4 +4,12 @@
 	width: 100px;
 	background: rgba(0, 0, 0,0.4);
 	border-radius: 12px;
+	transform: scale(.4);
+	transition: 1s;
 }
+
+.ele:hover
+{
+	transform: scale(1.0);
+}
+

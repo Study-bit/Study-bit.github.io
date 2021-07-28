@@ -7,6 +7,12 @@
 	fill: #fff;
 	height: 40px;
 }
+
+.navbar
+{
+	position: fixed;
+}
+
 .icons-selected
 {
 	background: #fff;
