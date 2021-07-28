@@ -3,6 +3,7 @@ render(0)
 let con = document.querySelector(".con")
 let item = document.querySelectorAll(".icons")
 let demo = document.querySelector(".demo")
+let root = document.querySelector(".root")
 let prev = item[0];
 item[0].classList.add("icons-selected")
 let num =0;
@@ -72,10 +73,11 @@ function handleGesture() {
 
 document.body.addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenY;
-  
+  root.style.filter = "blur("+4+"px)"
 });
 document.body.addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenY;
+  root.style.filter = null	
   handleGesture();
 });
 
