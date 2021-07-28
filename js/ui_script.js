@@ -72,12 +72,10 @@ function handleGesture() {
 
 document.body.addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenY;
-  console.log(touchstartX)
-  document.body.style.filter = "blur("+4+"px)"
+  
 });
 document.body.addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenY;
-  document.body.style.filter = null	
   handleGesture();
 });
 
