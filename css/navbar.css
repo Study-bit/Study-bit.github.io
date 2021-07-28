@@ -1,0 +1,110 @@
+.icons
+{
+	display: inline-block;
+	padding: 10px;
+	overflow: visible;
+	background: #0680c7;
+	fill: #fff;
+	height: 40px;
+}
+.icons-selected
+{
+	background: #fff;
+	filter: drop-shadow(1px 1px 3px rgba(0,0,0,.2));
+	border-radius: 50%;
+	fill: #0680c7;
+}
+.con
+{
+	filter: url("#goo");
+	bottom: 0;
+	z-index: 3;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	margin-bottom: 10px;
+}
+
+.demo
+{
+	background: #0680c7;
+	width: 90vw;
+	z-index: 3;
+	border-radius: 35px;
+	height: 70px;
+	font-family: monospace;
+	color: #fff;
+	margin-top: 15vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.anim
+{
+	animation-name: anim;
+	animation-duration: 1000ms;
+}
+.anim_two
+{
+	animation-name: anim_two;
+	animation-duration: 1000ms;
+}
+.item
+{
+	z-index: 9;
+	background:#0680c7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes anim
+{
+	0%
+	{
+		transform: translateY(0) ;
+		border-radius: 10%;
+	}
+	25%
+	{
+		border-radius: 35% 65% 58% 42% / 59% 30% 70% 41% ;
+	}
+	50%
+	{
+		transform: translateY(-66px) ;
+		border-radius: 57% 43% 49% 51% / 38% 27% 73% 62% ;
+	}
+	75%
+	{
+		border-radius: 68% 32% 49% 51% / 69% 58% 42% 31%  ;
+	}
+	100%
+	{
+		transform: translateY(0);
+		border-radius: 10%;
+	}
+}
+@keyframes anim_two
+{
+	0%
+	{
+		transform: scale(1.0);
+	}
+	50%
+	{
+		transform: scale(0.9);
+	}
+	70%
+	{
+		transform: scale(1.02);
+	}
+	
+	100%
+	{
+		transform: scale(1.0);
+	}
+}
