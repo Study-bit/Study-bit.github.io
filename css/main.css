@@ -1,6 +1,12 @@
 @import "navbar.css";
 @import "home.css";
 
+::selection
+{
+	color: none;
+	background: none;
+}
+
 *
 {
 	padding: 0;
@@ -11,6 +17,9 @@
 body
 {
 	height: 100vh;
+	touch-action: none;
+	position: fixed;
+	transition: 500ms;
 }
 
 .root

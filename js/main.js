@@ -1,10 +1,11 @@
 const cache = await caches.open("v1")
 let root = document.querySelector(".root")
-cache.add("./page_data/home_one.o2")
+let page_data = ["./page_data/home_one.o2","./page_data/home_two.o2","./page_data/home_three.o2","./page_data/skill.o2","./page_data/about.o2"]
+cache.addAll(page_data)
 
-function render(name)
+function render(index)
 {
-	cache.match(name).then(res=>
+	cache.match(page_data[index]).then(res=>
 	{	
 	res.text().then(text=>
 	{
@@ -14,3 +15,4 @@ function render(name)
 }
 
 export {render}
+

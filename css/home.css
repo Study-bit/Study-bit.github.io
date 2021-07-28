@@ -4,12 +4,37 @@
 	width: 100px;
 	background: rgba(0, 0, 0,0.4);
 	border-radius: 12px;
-	transform: scale(.4);
-	transition: 1s;
+	animation-name: scale;
+	animation-duration: 1s;
 }
-
-.ele:hover
+.container
 {
-	transform: scale(1.0);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
 }
-
+.pro_card
+{
+	height: 40vh;
+	width: 95vw;
+	transition: 1s;
+	margin-bottom: 20px;
+	background: #0680c7;
+	border-radius: 1vh;
+	animation-name: scale;
+	animation-duration: 1s;
+}
+.pro_before
+{
+	transform: translateY(calc(-40vh - 20px));
+}
+@keyframes scale
+{
+	40%
+	{
+		transform: scale(1.3);
+	}
+}
