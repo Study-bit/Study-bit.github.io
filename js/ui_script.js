@@ -73,8 +73,13 @@ function handleGesture() {
 
 document.body.addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenY;
-  root.style.filter = "blur("+4+"px)"
 });
+
+document.body.addEventListener('touchmove',e=>
+{
+	root.style.filter = "blur("+4+"px)"
+})
+
 document.body.addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenY;
   root.style.filter = null	
@@ -102,4 +107,9 @@ function setNav(num)
 			prev = item[2]
 			break;
 	}
+}
+
+let test=()=>
+{
+	console.log("this")
 }

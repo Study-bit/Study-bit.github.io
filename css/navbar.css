@@ -5,6 +5,7 @@
 	overflow: visible;
 	background: #0680c7;
 	fill: #fff;
+	z-index: 9;
 	height: 40px;
 }
 
@@ -12,6 +13,7 @@
 {
 	position: fixed;
 	bottom: 0;
+	z-index: 9;
 	filter: drop-shadow(1px 1px 5px rgba(0,0,0,.5));
 }
 
@@ -26,7 +28,6 @@
 {
 	filter: url("#goo");
 	bottom: 0;
-	z-index: 3;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -39,7 +40,6 @@
 {
 	background: #0680c7;
 	width: 90vw;
-	z-index: 3;
 	border-radius: 35px;
 	height: 70px;
 	font-family: monospace;
@@ -63,7 +63,6 @@
 }
 .item
 {
-	z-index: 9;
 	background:#0680c7;
 	display: flex;
 	align-items: center;

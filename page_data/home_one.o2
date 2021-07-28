@@ -1,4 +1,9 @@
 <div class="container">
+	<div class="scont">
 	<div class="pro_card"></div>
+	<svg viewBox="0 0 24 24" class="arrow" onclick="test()">
+		<use xlink:href="icons/svg-def.svg#arrow"></use>
+	</svg>
 	<div class="pro_card pro_before"></div>
+	</div>
 </div>

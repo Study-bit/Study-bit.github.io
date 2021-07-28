@@ -14,5 +14,8 @@
 			<ellipse ry="4.4" rx="4.6" cy="5.1" cx="12.1"/>
 			<rect ry="5.5" y="12" x="1" height="11" width="22" />
 		</g>
+		<g id="arrow">
+			<path d="M 1,10 12.313608,20.391804 23,10 v 0" />
+		</g>
 	</defs>
 </svg>

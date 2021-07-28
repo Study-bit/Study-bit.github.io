@@ -19,7 +19,6 @@ body
 	height: 100vh;
 	touch-action: none;
 	position: fixed;
-	transition: 500ms;
 }
 
 .root
@@ -29,4 +28,5 @@ body
 	width: 100vw;
 	justify-content: center;
 	align-items: center;
+	transition: 500ms;
 }
