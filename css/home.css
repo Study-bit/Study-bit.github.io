@@ -34,9 +34,27 @@
 	animation-name: scale;
 	animation-duration: 1s;
 	display: flex;
+	filter: url("#goo");
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+.liq
+{
+	display: flex;
+	position: absolute;
+	transform: translateY(-100%);	
+}
+.liquid
+{
+	border-radius: 50%;
+	background: #0680c7;
+	transition: 2.5s;
+	transform: translateY(0);
+}
+.liq_t
+{
+	transform: translateY(200%);
 }
 .arrow
 {
@@ -44,6 +62,8 @@
 	overflow: visible;
 	height: 60px;
 	padding: 10px;
+	transition: .5s;
+	position: fixed;
 	background: #fff;
 	fill: none;
 	border-radius: 10px;
@@ -53,6 +73,14 @@
 	stroke-linejoin: round;
 	z-index: 9;
 	filter: drop-shadow(1px 1px 5px rgba(0,0,0,.5));
+}
+.trans
+{
+	transform: translateY(0);
+}
+.rotate
+{
+	transform: rotate(180deg);
 }
 @keyframes scale
 {

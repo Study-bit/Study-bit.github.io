@@ -108,8 +108,31 @@ function setNav(num)
 			break;
 	}
 }
-
-let test=()=>
+function load()
 {
-	console.log("this")
+	document.querySelector(".liq").innerHTML = ""
+	for(let i=0;i<10;i++)
+	{
+		let ele = document.createElement("div")
+		ele.setAttribute("class","liquid")
+		let dim =(Math.floor(Math.random() * 50)+10) +"px"
+		ele.style.height = dim
+		ele.style.width = dim
+		document.querySelector(".liq").appendChild(ele)
+	}
 }
+let toggle = false;
+function handleClick()
+{	
+	document.querySelector(".pro_before").classList.toggle("trans")
+	document.querySelector(".arrow").classList.toggle("rotate")
+	let items = document.querySelectorAll(".liquid")
+	items.forEach(getTrans)
+}	
+
+function getTrans(item)
+{
+	item.classList.toggle("liq_t")
+}
+window.handleClick = handleClick
+window.load = load
