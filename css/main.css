@@ -1,5 +1,6 @@
 @import "navbar.css";
 @import "home.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
 ::selection
 {
@@ -19,6 +20,7 @@ body
 	height: 100vh;
 	touch-action: none;
 	position: fixed;
+	font-family: 'Comfortaa', cursive;
 }
 
 .root

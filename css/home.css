@@ -20,15 +20,22 @@
 {
 	height: 40vh;
 	width: 85vw;
+	z-index: 2;
 	overflow: hidden;
 	transition: 1s;
 	margin-bottom: 20px;
 	background: #0680c7;
 	border-radius: 1vh;
 }
+.heading
+{
+	color: #fff;
+	padding: 5px;
+}
 .pro_before
 {
 	transform: translateY(calc(-40vh - 20px));
+	z-index: 1;
 }
 .scont
 {
@@ -52,7 +59,7 @@
 {
 	border-radius: 50%;
 	background: #0680c7;
-	transition: 2.5s;
+	transition: 2s;
 	transform: translateY(0);
 }
 .liq_t

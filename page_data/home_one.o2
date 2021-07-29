@@ -1,7 +1,12 @@
 <div class="container" >
 	<style onload="load()"></style>
 	<div class="scont">
-	<div class="pro_card"></div>
+	<div class="pro_card">
+		<h1 class="heading">hi there !</h1><br><br>
+		<h3 class="heading">i am bhawneet singh.</h3>
+		<h3 class="heading">bachelor of science(Computer Science).</h3>
+		<h3 class="heading">Kumaoun Univesity Nainital</h3>
+	</div>
 	<div class="pro_card pro_before"></div>
 	<div class="liq"></div>
 	</div>
