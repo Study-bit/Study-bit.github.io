@@ -115,7 +115,7 @@ function load()
 	{
 		let ele = document.createElement("div")
 		ele.setAttribute("class","liquid")
-		let dim =(Math.floor(Math.random() * 50)+10) +"px"
+		let dim =(Math.floor(Math.random() * 100)+30) +"px"
 		ele.style.height = dim
 		ele.style.width = dim
 		document.querySelector(".liq").appendChild(ele)

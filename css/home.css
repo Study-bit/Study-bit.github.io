@@ -20,6 +20,7 @@
 {
 	height: 40vh;
 	width: 85vw;
+	overflow: hidden;
 	transition: 1s;
 	margin-bottom: 20px;
 	background: #0680c7;
@@ -42,6 +43,8 @@
 .liq
 {
 	display: flex;
+	width: 85vw;
+	z-index: 1;
 	position: absolute;
 	transform: translateY(-100%);	
 }
