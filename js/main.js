@@ -14,5 +14,18 @@ function render(index)
 	})	
 }
 
+self.addEventListener('activate', (event) => {
+  var cacheKeeplist = ['v1'];
+
+  event.waitUntil(
+    caches.keys().then((keyList) => {
+      return Promise.all(keyList.map((key) => {
+        if (cacheKeeplist.indexOf(key) === -1) {
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+});
 export {render}
 
