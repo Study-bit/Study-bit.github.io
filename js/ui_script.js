@@ -80,7 +80,8 @@ document.body.addEventListener('touchstart', e => {
 
 document.body.addEventListener('touchmove',e=>
 {
-	root.style.filter = "blur("+4+"px)"
+	if(Math.abs(touchstartX -  e.changedTouches[0].screenY) > 100)
+		root.style.filter = "blur("+4+"px)"
 })
 
 document.body.addEventListener('touchend', e => {

@@ -1,0 +1,23 @@
+.about
+{
+	width: 85vw;
+	height: 100px;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	mix-blend-mode: difference;
+	background: linear-gradient(45deg,#0680c7 50%,#c9c8c7 50%);
+}
+.text
+{
+	
+}
+
+.text:after
+{
+  	content: "oxigen";
+  	display: block;
+  	color: #fff;
+  	mix-blend-mode: difference;
+}

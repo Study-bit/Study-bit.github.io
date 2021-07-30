@@ -1,10 +1,12 @@
 <div class="container" >
 	<div class="scont">
 	<div class="pro_card">
-		<h1 class="heading">hi there !</h1><br><br>
+		<h1 class="heading">hi there !</h1>
 		<h3 class="heading">i am bhawneet singh.</h3>
 		<h3 class="heading">bachelor of science(Computer Science).</h3>
+		<h3 class="heading">D.S.B Campus Nainital</h3>
 		<h3 class="heading">Kumaoun Univesity Nainital</h3>
+		<center><h3 class="heading" style="font-family: monospace;">******</h3></center>
 	</div>
 	<div class="liq">
 		<div class="liquid" style="height: 35px; width: 35px;"></div>

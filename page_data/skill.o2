@@ -1,3 +1,77 @@
-<div class="ele">
-	<h1>skill</h1>
+<div class="container">
+	<div class="scont">
+	<div class="pro_card">
+		<div>
+		<h1 class="heading">skills</h1>
+		<h2 class="heading">programming</h2>
+		</div>
+		<div style="overflow: scroll;">
+		<h3 class="heading">assembly</h3>
+		<h3 class="heading">c</h3>
+		<h3 class="heading">c++</h3>
+		<h3 class="heading">java</h3>
+		<h3 class="heading">python</h3>
+		<h3 class="heading">html</h3>
+		<h3 class="heading">css</h3>
+		<h3 class="heading">javascript</h3>
+		<h3 class="heading">react</h3>
+		<h3 class="heading">nodejs</h3>
+		</div>
+	</div>
+	<div class="liq">
+		<div class="liquid" style="height: 35px; width: 35px;"></div>
+		<div class="liquid" style="height: 40px; width: 40px;"></div>
+		<div class="liquid" style="height: 45px; width: 45px;"></div>
+		<div class="liquid" style="height: 40px; width: 40px;"></div>
+		<div class="liquid" style="height: 45px; width: 45px;"></div>
+		<div class="liquid" style="height: 40px; width: 40px;"></div>
+		<div class="liquid" style="height: 35px; width: 35px;"></div>
+		<div class="liquid" style="height: 40px; width: 40px;"></div>
+	</div>
+	<div class="pro_card pro_before">
+		<div class="pro_cont">
+			<h3 class="heading">assembly</h3>
+			<div class="progress" style="width:40%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading"	>c</h3>
+			<div class="progress" style="width:80%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading">c++</h3>
+			<div class="progress" style="width:70%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading">java</h3>
+			<div class="progress" style="width:80%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading">python</h3>
+			<div class="progress" style="width:70%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading">html</h3>
+			<div class="progress" style="width:90%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading">css</h3>
+			<div class="progress" style="width:95%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading">javascript</h3>
+			<div class="progress" style="width:80%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading">react</h3>
+			<div class="progress" style="width:50%"></div>
+		</div>
+		<div class="pro_cont">
+			<h3 class="heading">nodejs</h3>
+			<div class="progress" style="width:60%"></div>
+		</div>
+	</div>
+	</div>
+	<svg viewBox="0 0 24 24" class="arrow" onclick="handleClick()">
+		<use xlink:href="icons/svg-def.svg#arrow"></use>
+	</svg>
 </div>

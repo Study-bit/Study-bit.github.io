@@ -20,12 +20,32 @@
 {
 	height: 40vh;
 	width: 85vw;
+	flex-wrap: wrap; 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
 	z-index: 2;
 	overflow: hidden;
 	transition: 1s;
 	margin-bottom: 20px;
 	background: #0680c7;
 	border-radius: 1vh;
+}
+
+.pro_cont
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	overflow: scroll;
+	flex-direction: column;
+}
+.progress
+{
+	height: 5px;
+	border-radius: 2.5px;
+	background: #fff;
 }
 .heading
 {

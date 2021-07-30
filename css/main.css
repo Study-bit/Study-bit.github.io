@@ -1,11 +1,16 @@
 @import "navbar.css";
 @import "home.css";
+@import "about.css";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
-
 ::selection
 {
 	color: none;
 	background: none;
+}
+
+::-webkit-scrollbar 
+{
+	display: none;
 }
 
 *
@@ -21,6 +26,7 @@ body
 	touch-action: none;
 	position: fixed;
 	font-family: 'Comfortaa', cursive;
+
 }
 
 .root
