@@ -36,6 +36,10 @@
 {
 	transform: translateY(calc(-40vh - 20px));
 	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
 }
 .scont
 {
@@ -50,21 +54,21 @@
 .liq
 {
 	display: flex;
+	justify-content: space-around;
 	width: 85vw;
 	z-index: 1;
 	position: absolute;
-	transform: translateY(-100%);	
+	transform: translateY(-200%);	
 }
 .liquid
 {
 	border-radius: 50%;
 	background: #0680c7;
 	transition: 2s;
-	transform: translateY(0);
 }
 .liq_t
 {
-	transform: translateY(200%);
+	transform: translateY(325%);
 }
 .arrow
 {
@@ -91,6 +95,14 @@
 .rotate
 {
 	transform: rotate(180deg);
+}
+.profile
+{
+	height:175px;
+	border-radius: 50%;
+	width: 175px;
+	border: 10px solid #fff;
+	filter: drop-shadow(1px 1px 5px rgba(0,0,0,.3));
 }
 @keyframes scale
 {

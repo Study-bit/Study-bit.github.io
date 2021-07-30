@@ -11,16 +11,19 @@ for (let i = 0;i < item.length ;i++)
 {
 item[i].addEventListener("click",event=>
 {
-	item[i].classList.add("anim")
-	con.classList.add("anim_two")
-	if (prev != null)
-	{
-		prev.classList.remove("icons-selected")
-	}
-	item[i].addEventListener( "animationend",  function() {
-
-    	item[i].classList.remove("anim");    
-    	con.classList.remove("anim_two")
+		item[i].classList.add("anim")
+		con.classList.add("anim_two")
+		if (prev != null)
+		{
+			prev.classList.remove("icons-selected")
+		}
+		item[i].addEventListener( "animationend",  function() {
+		if (prev != null)
+		{
+			prev.classList.remove("icons-selected")
+		}
+    item[i].classList.remove("anim");    
+    con.classList.remove("anim_two")
 		item[i].classList.add("icons-selected")
 		prev = item[i]
 		switch(i)
@@ -108,20 +111,7 @@ function setNav(num)
 			break;
 	}
 }
-function load()
-{
-	document.querySelector(".liq").innerHTML = ""
-	for(let i=0;i<10;i++)
-	{
-		let ele = document.createElement("div")
-		ele.setAttribute("class","liquid")
-		let dim =(Math.floor(Math.random() * 100)+30) +"px"
-		ele.style.height = dim
-		ele.style.width = dim
-		document.querySelector(".liq").appendChild(ele)
-	}
-}
-let toggle = false;
+
 function handleClick()
 {	
 	document.querySelector(".pro_before").classList.toggle("trans")
@@ -130,9 +120,9 @@ function handleClick()
 	items.forEach(getTrans)
 }	
 
-function getTrans(item)
+function getTrans(itemt)
 {
-	item.classList.toggle("liq_t")
+	itemt.classList.toggle("liq_t")
 }
+
 window.handleClick = handleClick
-window.load = load
