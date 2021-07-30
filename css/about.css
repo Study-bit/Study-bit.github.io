@@ -1,8 +1,8 @@
 .about
 {
 	width: 85vw;
-	height: 100px;
-	border-radius: 25px;
+	height: 60px;
+	border-radius: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -11,14 +11,17 @@
 	animation-name: scale;
 	animation-duration: 1s;
 }
-.text
-{
-	
-}
 
 .text:after
 {
-  	content: "oxigen";
+  	content: "project";
+  	display: block;
+  	color: #fff;
+  	mix-blend-mode: difference;
+}
+.text1:after
+{
+	content: "working on";
   	display: block;
   	color: #fff;
   	mix-blend-mode: difference;

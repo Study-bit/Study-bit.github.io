@@ -20,7 +20,7 @@
 {
 	height: 40vh;
 	width: 85vw;
-	flex-wrap: wrap; 
+	flex-wrap:wrap; 
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -44,7 +44,7 @@
 .progress
 {
 	height: 5px;
-	border-radius:0 2.5px 2.5px 0;
+	border-radius:0 2.5px 2.5px 0 ;
 	background: #fff;
 }
 .heading
@@ -57,6 +57,7 @@
 	transform: translateY(calc(-40vh - 20px));
 	z-index: 1;
 	display: flex;
+	padding-bottom: 15px;
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;

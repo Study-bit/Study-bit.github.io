@@ -1,3 +1,16 @@
-<div class="ele" >
-	<h1>three</h1>
+<div class="container">
+	<div class="about">
+		<h1 class="text1"></h1>
+	</div>
+	<div style="padding: 20px;">
+		<br>
+		<h1 style="color: #0680c7;">Operating System</h1>
+		<p style="color: #969693;">I want to make an own hobby operation system of my own.so i am working on operatin system project.</p>
+		<br>
+		<h1 style="color: #0680c7;">video streaming app</h1>
+		<p style="color: #969693;">i also want to make video confremcing applicaton so curruntly i am working on that too.</p>
+		<br>
+		<h1 style="color: #0680c7;">Games</h1>
+		<p style="color: #969693;">I am courius in game devlopment too. so i am learing game devalopment and graphics .</p>
+	</div>
 </div>

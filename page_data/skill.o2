@@ -28,7 +28,7 @@
 		<div class="liquid" style="height: 35px; width: 35px;"></div>
 		<div class="liquid" style="height: 40px; width: 40px;"></div>
 	</div>
-	<div class="pro_card pro_before">
+	<div class="pro_card pro_before" style="overflow: scroll;">
 		<div class="pro_cont">
 			<h3 class="heading">assembly</h3>
 			<div class="progress" style="width:40%"></div>
