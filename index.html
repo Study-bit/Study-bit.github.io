@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -40,5 +40,87 @@
 <div class="root"></div>
 <script type="module" src="js/ui_script.js"></script>
 <script type="module" src="js/main.js" defer></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>hotspot</title>
+	<style type="text/css">
+		*
+		{
+			padding: 0;
+			margin: 0;
+		}
+
+		body
+		{
+			display: flex;
+			height: 100vh;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.btn
+		{
+			background: rgb(25,125,235,0.7);
+			border-radius: 8px;
+			padding: 5px;
+			color: #fff;
+			margin: 10px;
+			font-size: 30px;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="adb" class="btn">enable adb</button>
+	<button id="hots" class="btn">open hotspot</button>
+<script type="text/javascript">
+	let btn = document.getElementById('hots')
+	btn.addEventListener('click', event=>
+	{
+        if(window.MozActivity) 
+        {
+          let act = new MozActivity(
+          {
+            name: "configure",
+            data: 
+            {
+            	target: "device",
+            	section: "hotspot"
+            }
+          })
+        }
+        else 
+        {
+          window.alert('Please open the page from the device itself!')
+        }
+      }, false)
+    let adb_btn = document.querySelector("#adb")
+    adb_btn.addEventListener("click",event=>
+    {
+    	if(window.MozActivity) 
+        {
+          let act = new MozActivity(
+          {
+            name: "configure",
+            data: 
+            {
+            	target: "device",
+            	section: "developer"
+            }
+          })
+        }
+        else 
+        {
+          window.alert('Please open the page from the device itself!')
+        }
+    },false)
+
+</script>
 </body>
 </html>
